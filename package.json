@@ -1,0 +1,36 @@
+{
+  "name": "reactbrokenclick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwilde345/reactBrokenClick.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwilde345/reactBrokenClick/issues"
+  },
+  "homepage": "https://github.com/mwilde345/reactBrokenClick#readme",
+  "dependencies": {
+    "react-d3-tree": "^1.12.0",
+    "d3": "^5.7.0",
+    "d3-drag": "^1.2.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
