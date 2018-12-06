@@ -10,12 +10,15 @@ const CONTAINER_STYLE = {
 export default class App extends Component {
     constructor(props) {
         super(props);
+        // give mouseClick access to this
         this.mouseClick = this.mouseClick.bind(this);
+        // feed data to the tree
         this.state = {
             data: require('./sampleData').treeData
         }
     }
     componentDidMount() {
+        // this whole method just handles the centering for the graph on the page
         const dimensions = this.treeContainer.getBoundingClientRect();
         this.setState({
             translate: {
@@ -27,7 +30,9 @@ export default class App extends Component {
     mouseClick(nodeData, event) {
         console.log(nodeData);
         event.persist();
+        // i can see the shiftKey value is set correctly here
         console.log(event);
+        // but then this is null
         console.log(event.shiftKey);
     }
 
